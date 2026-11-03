@@ -116,6 +116,18 @@
                         </li>
                     </ul>
 
+                    <div class="mt-8 pt-6 border-t border-[#e3e3e0] dark:border-[#3E3E3A]">
+                        <h2 class="text-base font-medium mb-3 text-[#1b1b18] dark:text-[#EDEDEC]">Bootstrap Primary Button (Tailwind recreation):</h2>
+                        <div class="flex flex-wrap gap-3">
+                            <button type="button" class="inline-flex items-center justify-center px-3 py-1.5 text-sm font-normal text-white bg-[#0d6efd] border border-transparent rounded-md leading-normal hover:bg-[#0b5ed7] focus-visible:ring-2 focus-visible:ring-[#0d6efd] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#0a0a0a] focus-visible:outline-none active:bg-[#0a58ca] disabled:opacity-65 disabled:cursor-not-allowed disabled:pointer-events-none transition-colors duration-150">
+                                Primary Button
+                            </button>
+                            <button type="button" disabled class="inline-flex items-center justify-center px-3 py-1.5 text-sm font-normal text-white bg-[#0d6efd] border border-transparent rounded-md leading-normal hover:bg-[#0b5ed7] focus-visible:ring-2 focus-visible:ring-[#0d6efd] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#0a0a0a] focus-visible:outline-none active:bg-[#0a58ca] disabled:opacity-65 disabled:cursor-not-allowed disabled:pointer-events-none transition-colors duration-150">
+                                Disabled
+                            </button>
+                        </div>
+                    </div>
+
                     <p class="mt-6 lg:mt-10 text-[#706f6c] dark:text-[#A1A09A]">
                         v{{ app()->version() }}
                         <a href="https://github.com/laravel/framework/blob/13.x/CHANGELOG.md" target="_blank" class="inline-flex items-center space-x-1 font-medium underline underline-offset-4 text-[#f53003] dark:text-[#FF4433] ml-1">
