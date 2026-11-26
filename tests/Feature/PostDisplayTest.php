@@ -18,6 +18,7 @@ test('the homepage paginates posts after twenty entries', function () {
     Post::factory()->count(20)->create(['title' => 'First page post']);
     Post::factory()->create(['title' => 'Second page post']);
 
-    $this->get('/')->assertOk()->assertSee('First page post')->assertDontSee('Second page post');
+    $this->get('/')->assertOk()->assertSee('First page post')->assertDontSee('Second page post')
+        ->assertSee('join-item btn btn-active', false);
     $this->get('/?page=2')->assertOk()->assertSee('Second page post')->assertDontSee('First page post');
 });
