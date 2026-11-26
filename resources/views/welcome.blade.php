@@ -1,4 +1,9 @@
 @extends('partials.layout')
 @section('content')
-    <button class="btn btn-primary">Wow DaisyUI</button>
+    {{ $posts->links() }}
+    <div class="grid grid-cols-4 gap-4">
+        @foreach($posts as $post)
+            @include('partials.post-card')
+        @endforeach
+    </div>
 @endsection
